@@ -15,7 +15,7 @@ const NewsPage = lazy(() => import('./pages/NewsPage'));
 
 function App() {
   return (
-    <Router>
+    <Router basename={import.meta.env.BASE_URL}>
       <ScrollToTop />
       <Suspense fallback={<PageLoader />}>
         <Routes>

@@ -10,7 +10,7 @@ const Logo: React.FC<LogoProps> = ({ className = '' }) => {
     return (
         <Link to="/" className={`flex items-center space-x-2 ${className}`}>
             <motion.img
-                src="/logo.png"
+                src={`${import.meta.env.BASE_URL}logo.png`}
                 alt="MediCare+ Logo"
                 className="h-10 w-10"
                 whileHover={{ scale: 1.1, rotate: 5 }}
